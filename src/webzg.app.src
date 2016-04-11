@@ -1,0 +1,19 @@
+{application, webzg,
+ [
+  {description, ""},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  cowboy
+                 ]},
+  {mod, {webzg_app, []}},
+  {env, [{profile, true},
+         {emysql_config, [{user, "innodealing"},
+           {host, "localhost"},
+           {password, "innodealing"},
+           {database, "innodealing"},
+           {size, 20}]}
+          ]}
+ ]}.
